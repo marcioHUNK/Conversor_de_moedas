@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moedas</title>
+    <link rel="stylesheet" href="./css.css">
+</head>
+
+<body>
+    <div class='container'>
+        <h1 class="page-title">CASA DE CAMBIO DO ELDOR</h1>
+        <h2 class="page-subtitle">Onde seu dinheiro fica protegido</h2>
+        <p class="frase">Para começarmos, insira nos campos abaixo a quantidade de moedas que você tem.</p>
+
+        <form id="conversorForm">
+            <table style="width:100%">
+                <thead>
+                    <tr>
+                        <th>Peças de cobre (PC)</th>
+                        <th>Peças de Prata (PP)</th>
+                        <th>Peças de Electro (PE)</th>
+                        <th>Peças de Ouro (PO)</th>
+                        <th>Peças de Platina (PL)</th>
+                    </tr>
+                </thead>
+                <tbody id="Valores">
+                    <tr>
+                        <td><input type="text" id="cobreInput" placeholder="Insira a quantidade"></td>
+                        <td><input type="text" id="prataInput" placeholder="Insira a quantidade"></td>
+                        <td><input type="text" id="electroInput" placeholder="Insira a quantidade"></td>
+                        <td><input type="text" id="ouroInput" placeholder="Insira a quantidade"></td>
+                        <td><input type="text" id="platinaInput" placeholder="Insira a quantidade"></td>
+                    </tr>
+                    <!-- Adicione uma nova linha com células vazias -->
+                    <tr>
+                        <td id="cobreResult"></td>
+                        <td id="prataResult"></td>
+                        <td id="electroResult"></td>
+                        <td id="ouroResult"></td>
+                        <td id="platinaResult"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div>
+                <table style="width:100%">
+                    <thead>
+                        <tr>
+                            <th>Peças de cobre (PC) é a menor unidade de valor </th>
+                            <th>Peças de Prata (PP) vale 10x o cobre</th>
+                            <th>Peças de Electro (PE) vale 1/2 do ouro</th>
+                            <th>Peças de Ouro (PO) vale 10x menos que platina</th>
+                            <th>Peças de Platina (PL) maior unidade de valor</th>
+                        </tr>
+                    </thead>
+
+                    <!-- Botão para acionar a conversão -->
+                    <button type="button" onclick="converterMoedas()">Converter</button>
+        </form>
+
+        <script src="./script.js"></script>
+
+    </div>
+</body>
+
+</html>
